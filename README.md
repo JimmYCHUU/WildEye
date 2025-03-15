@@ -1,4 +1,4 @@
-# Animal Detector
+# WildEye
 Animal Detector is a Python-based application that utilizes machine learning models to identify and classify animals in images. The project leverages pre-trained models and custom scripts to detect various animal species, providing a user-friendly interface for seamless interaction.
 
 ### Features
@@ -19,7 +19,7 @@ To run the project locally, follow the steps below:
 #### Clone the Repository:
 
 
-    git clone https://github.com/zun43d/animal-detector.git
+    git clone https://github.com/JimmYCHUU/WildEye.git
 Navigate to the Project Directory:
 
 
