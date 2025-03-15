@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Animal Detection</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			// Load DaisyUI (extends TailwindCSS)
+			tailwind.config = {
+				plugins: [require('daisyui')],
+				daisyui: {
+					themes: ['emerald'], // Choose a theme
+				},
+			}
+		</script>
+	</head>
+
+	<body class="bg-gray-200 text-gray-800">
+		<nav class="bg-gray-100 shadow-sm px-5">
+			<div
+				class="container mx-auto py-5 flex items-center justify-between md:justify-center space-x-0 md:space-x-32"
+			>
+				<a
+					href="/"
+					class="btn btn-sm btn-primary border border-gray-300 py-2 px-3 rounded-lg"
+					>Overview</a
+				>
+				<a href="/" class="">
+					<img src="/static/logo.png" width="48px" alt="Animal Detector" />
+				</a>
+				<a
+					href="/image"
+					class="btn btn-sm btn-primary border border-gray-300 py-2 px-5 rounded-lg"
+					>Model</a
+				>
+			</div>
+		</nav>
+
+		<div class="container mx-auto py-10">
+			<div><img src="/static/reel.jpg" alt="Reel" class="rounded-lg" /></div>
+
+			<div
+				class="relative px-8 py-5 my-5 mx-auto artboard artboard-horizontal bg-white shadow-sm rounded-lg"
+			>
+				<h1 class="text-3xl font-bold">
+					Automated Wild Animal Detection and Classification System using
+					Yolov11.s
+				</h1>
+
+				<div class="flex flex-wrap md:flex-nowrap items-start justify-between">
+					<div class="my-5 space-y-2">
+						<h4 class="text-lg text-gray-400 font-semibold">Classes</h4>
+						<ul class="flex flex-wrap space-x-3 text-sm">
+							<li class="border border-gray-200 rounded-lg px-1 py-0.5">
+								Bear
+							</li>
+							<li class="border border-gray-200 rounded-lg px-1 py-0.5">
+								Cheetah
+							</li>
+							<li class="border border-gray-200 rounded-lg px-1 py-0.5">
+								Crocodile
+							</li>
+							<li class="border border-gray-200 rounded-lg px-1 py-0.5">
+								Elephant
+							</li>
+							<li class="border border-gray-200 rounded-lg px-1 py-0.5">Fox</li>
+							<li class="border border-gray-200 rounded-lg px-1 py-0.5">
+								Giraffe
+							</li>
+							<li class="border border-gray-200 rounded-lg px-1 py-0.5">
+								Hedgehog
+							</li>
+							<li class="border border-gray-200 rounded-lg px-1 py-0.5">
+								Human
+							</li>
+							<li class="border border-gray-200 rounded-lg px-1 py-0.5">
+								Leopard
+							</li>
+							<li class="border border-gray-200 rounded-lg px-1 py-0.5">
+								Lion
+							</li>
+							<li class="border border-gray-200 rounded-lg px-1 py-0.5">
+								Lynx
+							</li>
+							<li class="border border-gray-200 rounded-lg px-1 py-0.5">
+								Ostrich
+							</li>
+							<li class="border border-gray-200 rounded-lg px-1 py-0.5">
+								Rhinoceros
+							</li>
+							<li class="border border-gray-200 rounded-lg px-1 py-0.5">
+								Tiger
+							</li>
+							<li class="border border-gray-200 rounded-lg px-1 py-0.5">
+								Zebra
+							</li>
+						</ul>
+
+						<div class="py-5 space-y-2">
+							<h4 class="text-lg text-gray-400 font-semibold">Dataset</h4>
+							<div
+								class="flex flex-wrap md:flex-nowrap items-center md:space-x-3 w-full"
+							>
+								<div class="w-full border border-gray-200 rounded-lg px-5 py-3">
+									<p class="text-sm font-semibold text-gray-500/80">TOTAL</p>
+									<p class="text-lg"><b>3377</b> Images</p>
+								</div>
+								<hr class="hidden md:block border-l border-t-0 h-16" />
+								<div class="w-full border border-gray-200 rounded-lg px-5 py-3">
+									<p class="text-sm font-semibold text-gray-500/80">
+										TRAIN SET
+									</p>
+									<p class="text-lg"><b>2370</b> Images</p>
+								</div>
+								<div class="w-full border border-gray-200 rounded-lg px-5 py-3">
+									<p class="text-sm font-semibold text-gray-500/80">
+										VALID SET
+									</p>
+									<p class="text-lg"><b>669</b> Images</p>
+								</div>
+								<div class="w-full border border-gray-200 rounded-lg px-5 py-3">
+									<p class="text-sm font-semibold text-gray-500/80">TEST SET</p>
+									<p class="text-lg"><b>338</b> Images</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="space-y-2">
+							<h4 class="text-lg text-gray-400 font-semibold">Team Members</h4>
+							<div
+								class="flex flex-wrap md:flex-nowrap items-center md:space-x-3"
+							>
+								<div
+									class="w-full flex items-center border border-gray-200 rounded-lg overflow-hidden"
+								>
+									<div
+										class="w-36 h-36 overflow-hidden flex items-center justify-center"
+									>
+										<img src="/static/t1.jpeg" alt="Ifty Ahmed" class="w-36" />
+									</div>
+									<div class="px-3">
+										<p>Name: Ifty Ahmed</p>
+										<p>ID: 2021-1-60-041</p>
+										<p>Email: iftyahmed01822@gmail.com</p>
+										<p>Mobile: 01826430653</p>
+									</div>
+								</div>
+								<div
+									class="w-full flex items-center border border-gray-200 rounded-lg overflow-hidden"
+								>
+									<div
+										class="w-36 h-36 overflow-hidden flex items-center justify-center"
+									>
+										<img src="/static/t2.jpeg" alt="Ifty Ahmed" class="w-36" />
+									</div>
+									<div class="px-3">
+										<p>Name: Mahin Mia</p>
+										<p>ID: 2021-1-60-044</p>
+										<p>Email: mahinmia934@gmail.com</p>
+										<p>Mobile: 01736987956</p>
+									</div>
+								</div>
+							</div>
+							<div
+								class="flex flex-wrap md:flex-nowrap items-center md:space-x-3"
+							>
+								<div
+									class="w-full flex items-center border border-gray-200 rounded-lg overflow-hidden"
+								>
+									<div
+										class="w-36 h-36 overflow-hidden flex items-center justify-center"
+									>
+										<img src="/static/t4.jpeg" alt="Ifty Ahmed" class="w-36" />
+									</div>
+									<div class="px-3">
+										<p>Name: Asnova Jahan Reana</p>
+										<p>ID: 2021-2-60-093</p>
+										<p>Email: reana2233@gmail.com</p>
+										<p>Mobile: 01300014083</p>
+									</div>
+								</div>
+								<div
+									class="w-full flex items-center border border-gray-200 rounded-lg overflow-hidden"
+								>
+									<div
+										class="w-36 h-36 overflow-hidden flex items-center justify-center"
+									>
+										<img src="/static/t5.jpeg" alt="Ifty Ahmed" class="w-36" />
+									</div>
+									<div class="px-3">
+										<p>Name: Sabrina Alam Sabiha</p>
+										<p>ID: 2021-1-60-041</p>
+										<p>Email: sabihasabrinaalam@gmail.com</p>
+										<p>Mobile: 01638658424</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="py-5 space-y-2">
+							<h4 class="text-lg text-gray-400 font-semibold">Supervisor</h4>
+							<div
+								class="flex flex-wrap md:flex-nowrap items-center md:space-x-3"
+							>
+								<div
+									class="w-full flex items-center border border-gray-200 rounded-lg overflow-hidden"
+								>
+									<div
+										class="w-36 h-36 overflow-hidden flex items-center justify-center"
+									>
+										<img src="/static/t3.jpeg" alt="Ifty Ahmed" class="w-36" />
+									</div>
+									<div class="px-3">
+										<p>Dr. Md. Nawab Yousuf Ali</p>
+										<p>Professor</p>
+										<p>Department of Computer Science and Engineering</p>
+										<p>East West University</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="py-2 min-w-96 w-96 h-96">
+						<img
+							src="/static/graph.jpeg"
+							alt="Yolov5"
+							class="w-96 h-96 rounded-lg"
+						/>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
