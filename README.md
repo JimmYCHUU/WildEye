@@ -1,5 +1,5 @@
 # WildEye
-Animal Detector is a Python-based application that utilizes machine learning models to identify and classify animals in images. The project leverages pre-trained models and custom scripts to detect various animal species, providing a user-friendly interface for seamless interaction.
+WildEye is a Python-based application that utilizes machine learning models to identify and classify animals in images. The project leverages pre-trained models and custom scripts to detect various animal species, providing a user-friendly interface for seamless interaction.
 
 ### Features
 - Image Upload: Allows users to upload images for animal detection.
